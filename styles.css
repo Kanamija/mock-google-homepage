@@ -1,13 +1,23 @@
-html, body { height: 100%; margin: 0; }
-body { background:#000; color:#fff; font-family: Arial, Helvetica, sans-serif; }
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+
+  display: flex;              /* enable flexbox */
+  justify-content: center;    /* center horizontally */
+  align-items: center;        /* center vertically */
+  text-align: center;         /* center text inside */
+}
 
 .center {
-  position: fixed;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
-  width: min(90vw, 600px);
-  text-align: center;
+  width: min(90vw, 600px);    /* responsive width, max 600px */
 }
+
 
 .logo { font-size: 80px; margin: 0 0 30px; }
 .search-box input {
@@ -23,3 +33,4 @@ button {
 }
 button:hover { background: #777; }
 .promo { margin-top: 30px; font-size: 14px; color: #c0c7d1; }
+
